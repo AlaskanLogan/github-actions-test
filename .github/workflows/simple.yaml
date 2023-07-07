@@ -1,6 +1,11 @@
 name: Shell Commands
 
-on: [push]
+on:
+  push:
+    branches: [ "main" ]
+  pull_requests:
+    branches: [ "main" ]
+  workflow_dispatch:
 
 jobs:
   run-shell-command:
