@@ -13,5 +13,7 @@ jobs:
         uses: actions/hello-world-javascript-action@v1
         with:
           who-to-greet: Logan
+      - name: Log greeting Time Variable
+        run: echo "greet_time=steps.greet.outputs.time" >> "$GITHUB_ENV"
       - name: Log greeting Time
-        run: echo "${{ steps.greet.outputs.time }}"
+        run: echo "${{ env.greet_time }}"
