@@ -2,7 +2,7 @@ name: Actions Workflow
 
 on: [push, pull_request]
 #Checking Pulls
-#Adding branch
+#Adding branchs
 jobs:
   run-github-actions:
     runs-on: ubuntu-latest
